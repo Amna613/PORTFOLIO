@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMNAIN BAGUNDANG - Portfolio/CV</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      scroll-behavior: smooth;
+    }
+
+    .aesthetic-nav {
+      background-color: #333;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .aesthetic-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .aesthetic-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .aesthetic-nav a:hover {
+      color: #00bfff;
+    }
+
+    .aesthetic-bg {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .aesthetic-glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .facebook-profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .aesthetic-name {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .aesthetic-role {
+      font-size: 18px;
+      color: #6c757d;
+      margin-bottom: 30px;
+    }
+
+    .aesthetic-socials {
+      margin-bottom: 20px;
+    }
+
+    .aesthetic-socials a {
+      color: #333;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .aesthetic-socials a:hover {
+      color: #007bff;
+    }
+
+    .aesthetic-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .aesthetic-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .aesthetic-buttons button:hover {
+      background-color: #45a049;
+    }
+
+    .aesthetic-section {
+      display: none;
+      margin-top: 30px;
+      padding: 20px;
+      border: 2px solid #dfe4ea;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+    }
+
+    .aesthetic-visible {
+      display: block;
+    }
+
+    .aesthetic-section h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #4e5d6e;
+    }
+
+    .aesthetic-section-content {
+      font-size: 16px;
+      color: #6c757d;
+    }
+
+    .aesthetic-list {
+      padding-left: 20px;
+    }
+
+    .aesthetic-list li {
+      margin: 10px 0;
+    }
+
+    .aesthetic-footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="aesthetic-nav">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME SECTION -->
+<div class="aesthetic-bg" id="home">
+  <div class="aesthetic-glass-card">
+    <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.6435-9/73199677_856184558117372_7078051755291836416_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Fc9NAYXVC5YQ7kNvwG_eY6n&_nc_oc=Adm29Lk4oWGJZr7G-SOg608nAsRjJOJYvEB0fiknXagkpAgsb_6o10VB6L0SMV-ZeFa3O1l1jHwfWxSTmwm07uCa&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=BlBzmHdS9nQQX6gMiRR0cA&oh=00_AfGssuPzh6yh8z1OCn0asYUmwXHsm7ieCRuxVVwBbMff8Q&oe=68266FE7" alt="AMNAIN BAGUNDANG" class="facebook-profile-img" />
+    <h1 class="aesthetic-name">AMNAIN BAGUNDANG</h1>
+    <p class="aesthetic-role">BSIT Student | INTECH 2B</p>
+
+    <!-- Section Buttons -->
+    <div class="aesthetic-buttons">
+      <button onclick="toggleSection('education')">Education</button>
+      <button onclick="toggleSection('background')">Background</button>
+      <button onclick="toggleSection('skills')">Skills</button>
+    </div>
+
+    <!-- Hidden Sections -->
+    <div class="aesthetic-section" id="education">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      <p><strong>Bachelor of Science in Information Technology</strong><br>
+      Ateneo de Davao University – INTECH 2B<br>
+      <span class="aesthetic-muted">2022 – Present</span></p>
+
+      <p>
+        I am currently a proud 2nd year BSIT student at <strong>Ateneo de Davao University</strong>. 
+        Choosing this path wasn't just about learning how to code or build systems—it was about equipping myself with the tools 
+        to solve real-world problems through innovation and technology.
+      </p>
+
+      <p>
+        Being part of the <strong>INTECH 2B</strong> section has shaped my academic journey in incredible ways. 
+        It has challenged me to think critically, collaborate effectively, and explore the ever-evolving digital world with passion and purpose. 
+        The university’s commitment to academic excellence and social responsibility continues to inspire me to go beyond personal success 
+        and look toward making a lasting impact in society.
+      </p>
+
+      <p>
+        As I continue this journey, I strive to grow both in knowledge and character—to become a professional who not only understands technology 
+        but uses it with compassion, creativity, and integrity.
+      </p>
+    </div>
+
+    <div class="aesthetic-section" id="background">
+      <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+      <ul class="aesthetic-list">
+        <li><strong>Personal Portfolio Website</strong><br>HTML, CSS, and JavaScript showcase project to display skills and accomplishments.</li>
+        <li><strong>Entity-Relationship Diagram (ERD) for Library System</strong><br>Designed ERD for a Library Management System to represent the database structure and relationships between entities.</li>
+        <li><strong>UI/UX Design for Student Portal</strong><br>Designed wireframes and interactive prototypes for a student portal using Figma to enhance user experience and interface.</li>
+        <li><strong>Basic CRUD Application</strong><br>Developed a simple web-based CRUD app using PHP and MySQL for managing student data.</li>
+        <li><strong>Online Quiz System</strong><br>Developed an online quiz system with user authentication, scoring, and result display using PHP and MySQL.</li>
+        <li><strong>Inventory Management System</strong><br>Created an inventory management system to track stock and sales using PHP and MySQL.</li>
+        <li><strong>Weather Forecasting App</strong><br>Built a weather forecasting app using JavaScript and APIs to display real-time weather information.</li>
+        <li><strong>Blogging Website</strong><br>Created a blogging platform where users can post, comment, and share articles using PHP, MySQL, and JavaScript.</li>
+      </ul>
+      <h2><i class="fa-solid fa-flask"></i> Research</h2>
+      <div class="aesthetic-section-content">
+        <strong>Ongoing:</strong> "The Impact of Online Learning Platforms on BSIT Students' Academic Performance"
+      </div>
+    </div>
+
+    <div class="aesthetic-section" id="skills">
+      <h2><i class="fa-solid fa-lightbulb"></i> Skills</h2>
+      <ul class="aesthetic-list aesthetic-skills">
+        <li>Web Development (HTML, CSS, JavaScript, PHP)</li>
+        <li>Database Management (MySQL)</li>
+        <li>Java Programming</li>
+        <li>Basic Networking</li>
+        <li>Team Collaboration</li>
+        <li>Problem Solving</li>
+        <li>UI/UX Design (Figma, Canva)</li>
+        <li>Microsoft Office Suite</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<div class="aesthetic-bg" id="about">
+  <div class="aesthetic-glass-card">
+    <h2>About Me</h2>
+    <p>Hello! I’m Amnain Bagundang, currently a BSIT student in INTECH 2B. Passionate about coding, UI/UX, and solving problems through tech!</p>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<div class="aesthetic-bg" id="contact">
+  <div class="aesthetic-glass-card">
+    <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+    <div class="aesthetic-socials">
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function toggleSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section.classList.contains('aesthetic-visible')) {
+      section.classList.remove('aesthetic-visible');
+    } else {
+      const allSections = document.querySelectorAll('.aesthetic-section');
+      allSections.forEach(sec => sec.classList.remove('aesthetic-visible'));
+      section.classList.add('aesthetic-visible');
+    }
+  }
+</script>
+
+</body>
+</html>
